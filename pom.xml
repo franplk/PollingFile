@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.fy</groupId>
+	<artifactId>ftpupload</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>FTP UPLOAD FILE</name>
+	
+	<properties>
+		<java.version>1.8</java.version>
+		<junit.version>4.11</junit.version>
+		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+	</properties>
+	
+	<dependencies>
+	
+	<!-- FtpClient -->
+	<dependency>
+	    <groupId>commons-net</groupId>
+	    <artifactId>commons-net</artifactId>
+	    <version>3.4</version>
+	</dependency>
+	
+	</dependencies>
+	
+	<!-- Maven 编译信息 -->
+	<build>
+		<plugins>
+			<!-- 设定JDK版本 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<testSource>${java.version}</testSource>
+					<testTarget>${java.version}</testTarget>
+					<showWarnings>true</showWarnings>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+</project>
